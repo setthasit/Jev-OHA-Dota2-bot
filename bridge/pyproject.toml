@@ -1,0 +1,21 @@
+[project]
+name = "jevbot"
+version = "0.1.0"
+description = "Local HTTP bridge between Dota 2 bot scripts and TypeSafe's Jev model"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "typesafe-sdk==0.7.2",
+]
+
+[project.scripts]
+jevbot = "jevbot.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.9.5,<0.10.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest==9.1.1",
+]
