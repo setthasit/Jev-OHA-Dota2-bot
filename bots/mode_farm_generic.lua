@@ -287,7 +287,7 @@ function GetDesireHelper()
 		enemyKills = J.GetNumOfTeamTotalKills(true);
 
 		
-		if enemyKills > allyKills + nLostCount and J.Role.NotSayRate() 
+		if J.Customize.Allow_Trash_Talk and enemyKills > allyKills + nLostCount and J.Role.NotSayRate() 
 		then
 			J.Role['sayRate'] = true;
 			if RandomInt(1,6) < 3 
@@ -297,7 +297,7 @@ function GetDesireHelper()
 				bot:ActionImmediate_Chat(Localization.Get('say_will_lose_2'),true);
 			end
 		end
-		if allyKills > enemyKills + nWinCount and J.Role.NotSayRate() 
+		if J.Customize.Allow_Trash_Talk and allyKills > enemyKills + nWinCount and J.Role.NotSayRate() 
 		then
 		    J.Role['sayRate'] = true;
 			if RandomInt(1,6) < 3 
