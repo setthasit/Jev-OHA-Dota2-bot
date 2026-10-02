@@ -75,10 +75,10 @@ Customize.Weak_Penalty = { type = "exp", base = 0.6 }
 Customize.Strict_Ban_Match = true
 
 -- To allow bots do trash talking in different scenarios: got fb, killing a human, etc. Disable this also disables GPT chat.
-Customize.Allow_Trash_Talk = true
+Customize.Allow_Trash_Talk = false
 
 -- To allow bots response with GPT generated text to your chats in global channel. Disable Allow_Trash_Talk can disable this.
-Customize.Allow_AI_GPT_Response = true
+Customize.Allow_AI_GPT_Response = false
 
 -- Set the level of bots' trash talks. Disable Allow_Trash_Talk can disable this.
 -- 1 => no trash talks from ally bots, no taunt from enemy after it gets a kill. 2 => ally bots also trash talk to you, allow taunt from enemy after it gets a kill.
